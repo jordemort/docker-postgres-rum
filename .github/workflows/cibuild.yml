@@ -62,7 +62,7 @@ jobs:
           fi
 
           set -x
-          docker buildx build "${buildx_argv[@]}" --target untar .
+          docker buildx build "${buildx_argv[@]}" --target build .
           docker buildx build "${buildx_argv[@]}" .
 
       - uses: sarisia/actions-status-discord@v1
